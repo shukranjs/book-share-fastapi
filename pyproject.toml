@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "book share"
+version = "1.0.0"
+description = "Visit and read books with friends."
+authors = ["Shukran jabbarov"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.109.0"
+uvicorn = {extras = ["standard"], version = "^0.27.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
