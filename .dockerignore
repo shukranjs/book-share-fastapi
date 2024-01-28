@@ -1,0 +1,54 @@
+# Ignore common version control files and directories
+.git
+.gitignore
+svn
+CVS
+*.bzr
+.hg
+
+# Ignore local development files
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite
+*.log
+*.conf
+*.env
+*.local
+*.swp
+
+# Ignore common Python development and distribution files
+*.pyc
+*.pyo
+*.pyd
+*.pyz
+*.pyw
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+htmlcov/
+.coverage
+.tox/
+.cache/
+
+# Ignore node_modules (if using Node.js)
+node_modules/
+
+# Ignore compiled binary files and libraries
+*.so
+*.dylib
+*.dll
+
+# Ignore unnecessary Docker build context files
+Dockerfile*
+docker-compose*
+*.dockerignore
+*.md
+*.yml
+*.yaml
+LICENSE
+README*
