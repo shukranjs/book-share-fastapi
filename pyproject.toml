@@ -1,17 +1,24 @@
+# pyproject.toml
+
 [tool.poetry]
-name = "book share"
-version = "1.0.0"
-description = "Visit and read books with friends."
-authors = ["Shukran jabbarov"]
-readme = "README.md"
+name = "your_project_name"
+version = "0.1.0"
+description = "Your project description"
+authors = ["Your Name <your.email@example.com>"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-fastapi = "^0.109.0"
-uvicorn = {extras = ["standard"], version = "^0.27.0"}
-databases = {extras = ["postgresql"], version = "^0.8.0"}
+fastapi = ">=0.68.0,<1.0.0"
+uvicorn = ">=0.15.0,<1.0.0"
+databases = ">=0.4.3,<1.0.0"
+sqlalchemy = ">=1.4.0,<2.0.0"
+pydantic = ">=1.7.3,<2.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.0"
 
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
