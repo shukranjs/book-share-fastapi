@@ -3,7 +3,7 @@ from typing import List
 from dotenv import load_dotenv
 import logging
 from logging.config import dictConfig
-from pydantic import BaseSettings
+from pydantic_settings import BaseSettings
 
 # Load environment variables from .env file
 load_dotenv()
