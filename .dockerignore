@@ -15,7 +15,6 @@ __pycache__
 *.sqlite
 *.log
 *.conf
-*.env
 *.local
 *.swp
 

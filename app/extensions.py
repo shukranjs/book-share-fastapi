@@ -6,6 +6,7 @@ from .core.settings import BaseAppSettings
 settings = BaseAppSettings()
 
 SQLALCHEMY_DATABASE_URL = settings.database_url
+print(SQLALCHEMY_DATABASE_URL)
 
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL

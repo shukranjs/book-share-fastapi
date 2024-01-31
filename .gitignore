@@ -22,7 +22,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-
+.xml
 # PyInstaller
 *.manifest
 *.spec
@@ -75,3 +75,7 @@ target/
 .ipynb_checkpoints/
 
 # virtualenv
+
+# XML files
+*.xml
+*.iml
