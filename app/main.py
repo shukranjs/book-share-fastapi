@@ -5,11 +5,10 @@ from .api.helpers.database import get_db, create_all
 
 app = FastAPI()
 
-create_all()
 
-# @app.on_event("startup")
-# async def startup_app(db: Session = Depends(get_db)):
-#
+@app.on_event("startup")
+async def startup_app(db: Session = Depends(get_db)):
+    create_all()
 
 
 @app.get("/")
