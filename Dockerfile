@@ -7,8 +7,6 @@ LABEL maintainer="Shukran Jabbarov <shukranjsp@gmail.com>"
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
-CMD ["echo", "DATABASE_URL: ${DATABASE_URL}"]
-
 # Install system dependencies
 RUN apt-get update && \
     apt-get install -y --no-install-recommends gcc libpq-dev && \
